@@ -30,27 +30,27 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     buttons = [
         [
             InlineKeyboardButton(
-                text="Aᴅᴅ Mᴇ Iɴ Yᴏᴜʀ Gʀᴏᴜᴘ",
+                text="✭ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ✭",
                 url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
             )
         ],
         [
             InlineKeyboardButton(
-                text="Hᴇʟᴘ", callback_data="settings_back_helper"
+                text="✭ ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs ✭", callback_data="settings_back_helper"
             )
         ],
         [
             InlineKeyboardButton(
-                text="Sᴜᴘᴘᴏʀᴛ", url=config.SUPPORT_GROUP
+                text="✭ ᴜᴘᴅᴀᴛᴇs ✭", url=config.SUPPORT_CHANNEL
             ),
             InlineKeyboardButton(
-                text="Sᴜɢᴀʀ Dᴀᴅᴅʏ", user_id=OWNER
+                text="✭ ɢʀᴏᴜᴘ ✭", url=config.SUPPORT_GROUP
             )
         ],
         [
             InlineKeyboardButton(
-                text="Rᴏᴘᴇ", callback_data="gib_source"
+                text="✮ ᴏᴡɴᴇʀ ✮", url=f"https://t.me/Shalini_shalu_69"
             )
-        ],
+        ]
      ]
     return buttons
